@@ -1,0 +1,88 @@
+.wrapper {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 4rem;
+}
+
+.wrapper .box {
+  color: white;
+
+  line-height: 1.7rem;
+  background: #745683;
+  width: calc(33% - 10px);
+  padding: 25px;
+  border-radius: 3px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+}
+.icon {
+  color: #45005a;
+}
+
+.wrapper .box .quote {
+  font-size: 20px;
+  /* Change color according to background    */
+  color: #00ffff;
+}
+
+.wrapper .box .content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 10px;
+}
+
+.box .info .name {
+  font-weight: 600;
+  font-size: 17px;
+}
+
+.box .info .job {
+  font-size: 16px;
+  font-weight: 500;
+  /* Change color according to background */
+  color: #17a2b8;
+}
+
+.box .info .stars {
+  margin-top: 2px;
+}
+
+.box .content .image {
+  height: 75px;
+  width: 75px;
+  padding: 3px;
+  /* Change color according to background */
+  background: #8930e9;
+  border-radius: 50%;
+}
+
+.content .image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 1px solid #45005a;
+}
+
+.box:hover .content .image img {
+  border-color: #fff;
+}
+
+@media (max-width: 1045px) {
+  .wrapper .box {
+    width: calc(50% - 10px);
+    margin: 10px 0;
+  }
+}
+
+@media (max-width: 702px) {
+  .wrapper .box {
+    width: 100%;
+  }
+}

@@ -1,0 +1,93 @@
+.stats-page {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  padding-bottom: 6rem;
+
+  /* border: 1px solid #ccc; */
+  border-radius: 10px;
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+}
+.chart__cont {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  gap: 6rem;
+}
+@media screen and (max-width: 900px) {
+  .chart__cont {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 3rem;
+  }
+}
+.stats-page h1 {
+  font-size: 40px;
+  padding-bottom: 5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #00ffff;
+  background-image: -webkit-linear-gradient(45deg, #00ffff 22%, #5f2eff 82%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+
+.chart-container {
+  margin-bottom: 20px;
+  padding: 20px;
+  background: #745683;
+  background: white;
+  border: 3px solid #745683;
+  border-radius: 10px;
+  color: #00ffff;
+  background-image: -webkit-linear-gradient(45deg, #00ffff 22%, #5f2eff 82%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  /* text-fill-color: transparent;
+  -webkit-text-fill-color: transparent; */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+@media screen and (max-width: 900px) {
+  .chart-container {
+    padding: 1rem 0rem;
+  }
+}
+.chart-container h2 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.recharts-wrapper {
+  margin: 20px auto;
+}
+
+.recharts-tooltip {
+  background-color: #f7f7f7;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.recharts-tooltip-item {
+  margin-bottom: 10px;
+}
+.XAxis.recharts-label {
+  font-size: 14px !important;
+  font-weight: bold !important;
+  color: #333 !important;
+}
+
+.YAxis.recharts-label {
+  font-size: 14px !important;
+  font-weight: bold !important;
+  color: #333 !important;
+}

@@ -1,0 +1,32 @@
+:root {
+  --font-base: 'DM Sans', sans-serif;
+
+  --primary-color: #edf2f8;
+  --secondary1-color: #313bac;
+  --secondary-color: #ffffff;
+  --black-color: #030303;
+  --lightGray-color: #e4e4e4;
+  --gray-color: #6b7688;
+  --brown-color: #46364a;
+  --white-color: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+.modeloverlay {
+  position: fixed;
+  /* top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  padding: 50px;
+  z-index: 1000;
+}
